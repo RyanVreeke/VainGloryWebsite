@@ -1,3 +1,23 @@
+tr {
+  margin-right: auto;
+}
+
+th {
+  padding: 6px;
+}
+
+.hero-icons {
+  padding: 2px;
+  border: 3px solid black;
+  width: 60px;
+  height: 60px;
+}
+
+.hero-icons:hover {
+  padding: 2px;
+  border: 3px solid red;
+}
+
 #hero-anchor-table {
   color: blue;
   align-items: center;
@@ -20,7 +40,4 @@
 
 h1 {
   color: red;
-}
-
-#adagio {
 }
