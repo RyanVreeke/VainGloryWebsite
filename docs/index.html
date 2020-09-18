@@ -6,6 +6,10 @@
   </head>
 
   <script type="text/javascript">
+    logData = (id) => {
+      console.log(document.getElementById(id));
+      console.log(vaingloryObject.heroes[id].abilities.a_ability.name);
+    };
     const vaingloryObject = {
       items: {
         aegis: {
@@ -16889,43 +16893,6 @@
       It is a mobile MOBA or Multiplayer Online Battle Arena.<br />
     </p>
 
-    <h3>VainGlory Hero's</h3>
-
-    <!--This is a table element that I haven't heard of before-->
-    <table id="hero-anchor-table">
-      <tr>
-        <th>
-          <a href="#adagio">Adagio</a>
-          <a href="#ardan">Ardan</a>
-          <a href="#krul">Krul</a>
-        </th>
-      </tr>
-    </table>
-
-    <img
-      id="adagio"
-      height="275"
-      width="310"
-      src="https://jd3sljkvzi-flywheel.netdna-ssl.com/wp-content/themes/vainglory/images/heroes/hero-adagio.png"
-    />
-    <p><b>Adagio</b></p>
-
-    <img
-      id="ardan"
-      height="275"
-      width="200"
-      src="http://jd3sljkvzi-flywheel.netdna-ssl.com/wp-content/uploads/2015/06/hero-ardan.png"
-    />
-    <p><b>Ardan</b></p>
-
-    <img
-      id="krul"
-      height="275"
-      width="200"
-      src="https://jd3sljkvzi-flywheel.netdna-ssl.com/wp-content/uploads/2017/09/KrulActive.png"
-    />
-    <p><b>Krul</b></p>
-
     <div>
       <p>
         Please select a build type:
@@ -16940,14 +16907,19 @@
       </p>
     </div>
 
-    <div>
-      <table>
-        <th>Laners</th>
+    <div id="hero-table-div">
+      <table id="hero-icons-table">
+        <caption>
+          Vainglory Heroes
+        </caption>
+
+        <th colspan="2">Laners</th>
+
         <tr>
-          <td>
+          <td id="anka" onclick="logData('anka')">
             <img class="hero-icons" src="images/heroes/anka.png" />
           </td>
-          <td>
+          <td id="baptiste" onclick="logData('baptiste')">
             <img class="hero-icons" src="images/heroes/baptiste.png" />
           </td>
           <td>
@@ -16956,6 +16928,11 @@
           <td>
             <img class="hero-icons" src="images/heroes/blackfeather.png" />
           </td>
+          <td>
+            <img class="hero-icons" src="images/heroes/caine.png" />
+          </td>
+        </tr>
+        <tr>
           <td>
             <img class="hero-icons" src="images/heroes/celeste.png" />
           </td>
@@ -16966,6 +16943,14 @@
             <img class="hero-icons" src="images/heroes/idris.png" />
           </td>
           <td>
+            <img class="hero-icons" src="images/heroes/ishtar.png" />
+          </td>
+          <td>
+            <img class="hero-icons" src="images/heroes/karas.png" />
+          </td>
+        </tr>
+        <tr>
+          <td>
             <img class="hero-icons" src="images/heroes/kensei.png" />
           </td>
           <td>
@@ -16975,13 +16960,18 @@
             <img class="hero-icons" src="images/heroes/kinetic.png" />
           </td>
           <td>
-            <img
-              class="hero-icons"
-              src="https://vignette.wikia.nocookie.net/vainglory/images/b/ba/Magnus_icon.png/revision/latest/scale-to-width-down/110?cb=20190119053559"
-            />
+            <img class="hero-icons" src="images/heroes/leo.png" />
           </td>
           <td>
+            <img class="hero-icons" src="images/heroes/magnus.png" />
+          </td>
+        </tr>
+        <tr>
+          <td>
             <img class="hero-icons" src="images/heroes/malene.png" />
+          </td>
+          <td>
+            <img class="hero-icons" src="images/heroes/miho.png" />
           </td>
           <td>
             <img class="hero-icons" src="images/heroes/reza.png" />
@@ -16992,8 +16982,16 @@
           <td>
             <img class="hero-icons" src="images/heroes/samuel.png" />
           </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="hero-icons" src="images/heroes/san-feng.png" />
+          </td>
           <td>
             <img class="hero-icons" src="images/heroes/saw.png" />
+          </td>
+          <td>
+            <img class="hero-icons" src="images/heroes/shin.png" />
           </td>
           <td>
             <img class="hero-icons" src="images/heroes/silvernail.png" />
@@ -17001,6 +16999,8 @@
           <td>
             <img class="hero-icons" src="images/heroes/skaarf.png" />
           </td>
+        </tr>
+        <tr>
           <td>
             <img class="hero-icons" src="images/heroes/skye.png" />
           </td>
@@ -17010,11 +17010,19 @@
           <td>
             <img class="hero-icons" src="images/heroes/vox.png" />
           </td>
+          <td>
+            <img class="hero-icons" src="images/heroes/warhawk.png" />
+          </td>
         </tr>
-        <th>Junglers</th>
+
+        <th colspan="2">Junglers</th>
+
         <tr>
           <td>
             <img class="hero-icons" src="images/heroes/alpha.png" />
+          </td>
+          <td>
+            <img class="hero-icons" src="images/heroes/amael.png" />
           </td>
           <td>
             <img class="hero-icons" src="images/heroes/glaive.png" />
@@ -17023,11 +17031,10 @@
             <img class="hero-icons" src="images/heroes/grumpjaw.png" />
           </td>
           <td>
-            <img
-              class="hero-icons"
-              src="https://vignette.wikia.nocookie.net/vainglory/images/1/15/Inara_icon.png/revision/latest/scale-to-width-down/110?cb=20190119053344"
-            />
+            <img class="hero-icons" src="images/heroes/inara.png" />
           </td>
+        </tr>
+        <tr>
           <td>
             <img class="hero-icons" src="images/heroes/joule.png" />
           </td>
@@ -17043,6 +17050,8 @@
           <td>
             <img class="hero-icons" src="images/heroes/petal.png" />
           </td>
+        </tr>
+        <tr>
           <td>
             <img class="hero-icons" src="images/heroes/reim.png" />
           </td>
@@ -17055,8 +17064,13 @@
           <td>
             <img class="hero-icons" src="images/heroes/tony.png" />
           </td>
+          <td>
+            <img class="hero-icons" src="images/heroes/ylva.png" />
+          </td>
         </tr>
-        <th>Captians</th>
+
+        <th colspan="2">Captains</th>
+
         <tr>
           <td>
             <img class="hero-icons" src="images/heroes/adagio.png" />
@@ -17073,6 +17087,8 @@
           <td>
             <img class="hero-icons" src="images/heroes/flicker.png" />
           </td>
+        </tr>
+        <tr>
           <td>
             <img class="hero-icons" src="images/heroes/fortress.png" />
           </td>
@@ -17088,20 +17104,16 @@
           <td>
             <img class="hero-icons" src="images/heroes/lyra.png" />
           </td>
+        </tr>
+        <tr>
           <td>
             <img class="hero-icons" src="images/heroes/phinn.png" />
           </td>
           <td>
-            <img
-              class="hero-icons"
-              src="https://tse3.mm.bing.net/th?id=OIP._u44FsLBwFOaoEJLnGhQugAAAA&pid=Api&P=0&w=300&h=300"
-            />
+            <img class="hero-icons" src="images/heroes/viola.png" />
           </td>
           <td>
-            <img
-              class="hero-icons"
-              src="https://vignette.wikia.nocookie.net/vainglory/images/0/0e/Yates_icon.png/revision/latest/scale-to-width-down/110?cb=20190119054333"
-            />
+            <img class="hero-icons" src="images/heroes/yates.png" />
           </td>
         </tr>
       </table>

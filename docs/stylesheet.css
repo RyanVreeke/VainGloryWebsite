@@ -1,29 +1,32 @@
-tr {
-  margin-right: auto;
+#hero-table-div {
+  width: 80%;
 }
 
+#hero-icons-table {
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+caption,
 th {
-  padding: 6px;
+  text-align: left;
+  text-decoration: underline;
+  font-size: 30pt;
+  font-weight: bold;
 }
 
 .hero-icons {
-  padding: 2px;
+  margin: 3px;
+  padding: 4px;
   border: 3px solid black;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 
 .hero-icons:hover {
   padding: 2px;
   border: 3px solid red;
-}
-
-#hero-anchor-table {
-  color: blue;
-  align-items: center;
-  background-color: aquamarine;
-  border-radius: 4px;
-  border: 2px solid red;
 }
 
 #main-pic-header {
@@ -36,8 +39,4 @@ th {
   margin-left: auto;
   margin-right: auto;
   border: 2px solid red;
-}
-
-h1 {
-  color: red;
 }
